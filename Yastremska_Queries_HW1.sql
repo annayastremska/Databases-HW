@@ -46,3 +46,10 @@ SELECT title, release_year
 FROM Films
 ORDER BY release_year ASC
 LIMIT 3;
+
+-- UNION of characters and starships
+SELECT name AS item_name
+FROM Characters
+UNION ALL
+SELECT name AS item_name
+FROM Starships;
